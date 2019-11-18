@@ -1,0 +1,256 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+button{
+    font-family: 'Alatsi', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, li{
+    font-family: 'Alatsi', sans-serif;
+}
+
+@media screen and (max-width: 500px){
+    section.landing-init{
+        height: auto !important;
+    }
+}
+
+section.landing-init{
+    height: 100vh;
+    background: #eee;
+    position: relative;
+    color: #fff;
+}
+
+section .bg-image{
+    position: absolute;
+    background: url(../img/notes.jpg);
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    background-size: cover;
+    filter: brightness(0.3);
+}
+
+section header, section.wrapperCall{
+    position: relative;
+}
+
+section header{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+nav.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px;
+    flex-wrap: wrap;
+    background: rgba(0,0,0, 0.7);
+}
+
+div.logo:hover{
+    cursor: pointer;
+}
+
+div.logo img{
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width: 500px){
+    .search-input{
+        margin-top: 10px;
+    }
+}
+
+.search-input{
+    position: relative;
+}
+
+.search-input .search-icon{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 10px;
+    top: 7px;
+}
+
+input, textarea{
+    width: 300px;
+    max-width: 100%;
+    padding: 10px 5px;
+    background-color:transparent;
+    border-color: #FF6700;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    color: rgb(190, 185, 185);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input:focus, textarea:focus,input:active, textarea:active{
+            
+    border-color: #FF6700;
+    outline-color: #FF6700;
+    box-shadow: none;
+    outline-style: dashed;
+    border-radius: 2px;
+}
+
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation  li{
+    margin: 0 10px;
+}
+
+
+ul.pages li{
+    /* margin: 0 20px; */
+    padding: 0px 5px;
+    border-bottom: 3px dashed transparent;
+    transition:all 0.3s ease-in-out;
+    color: #FF6700;
+}
+
+ul.pages li:hover{
+    
+    border-bottom: 3px dashed #fff;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+div.callToAction{
+    padding: 15px;
+    max-width: 100%;
+    font-size: calc(15px + 0.6vmin);
+}
+
+.callToAction h1{
+    font-size: calc(2rem + 2vmin);
+    margin: 0;
+    /* color: #01BAEF; */
+}
+
+/* 
+    gray: C8C8C8
+    orange: FF6700
+    deep green: 034748
+ */
+
+.callToAction .cta{
+    margin-top: 15px;
+    width: 200px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    border: 2px solid #FF6700;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+    color: #fff;
+}
+
+.cta:hover{
+    background-color: rgba(255, 103, 0, 0.7);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.callToAction .cta:hover, li button:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    div.callToAction{
+        width: 60vw;
+    }
+}
+
+section.wrapperCall{
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+li button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #FF6700;
+    transition: all 0.3s ease-in;
+    background-color: transparent;
+    color: white;
+}
+
+li button:hover{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #FF6700;
+    background-color: #FF6700;
+}
+
+li.login button{
+    background-color: #FF6700;
+}
+
+main.landing-content{
+    height: 500vh;
+    padding: 10px;
+}
+
+main.landing-content h2{
+    text-align: center;
+}
+
+/* OFFERS SECTION */
+section.offer{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 500px){
+    .offer-item{
+        width: 100%;
+    }
+}
+
+section.offer > .offer-item{
+    margin: 10px 10px;
+    background-color: rgb(36, 33, 33);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+.offer-item img{
+    height: 30px;
+    width: 30px;
+}
+
+.offer-item > p{margin: 5px 0;}
