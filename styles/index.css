@@ -84,6 +84,7 @@ div.logo img{
     top: 7px;
 }
 
+
 input, textarea{
     width: 300px;
     max-width: 100%;
@@ -142,7 +143,7 @@ li:hover{
 div.callToAction{
     padding: 15px;
     max-width: 100%;
-    font-size: calc(15px + 0.6vmin);
+    font-size: calc(15px + 0.3vmin);
 }
 
 .callToAction h1{
@@ -238,6 +239,7 @@ section.offer > .offer-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding: 10px;
     font-size: 15px;
@@ -265,6 +267,10 @@ section.courses{
     justify-content: center;
     padding-top: 15px;
     flex-wrap: wrap;
+}
+
+.courses h2{
+    width: 100%;
 }
 
 .courses .course-item{
@@ -295,7 +301,7 @@ section.courses{
 
 span.view-cta{
     padding: 10px 15px;
-    background-color: hsl(24, 100%, 50%);
+    background-color: hsla(24, 100%, 50%, 0.747);
 }
 
 span.num-courses{
@@ -322,10 +328,87 @@ section.persuasion{
     text-align: center;
 }
 
+.persuasion h1{
+    width: 100%;
+    text-align: center;
+}
+
+.persuasion h3{
+    font-weight: normal;
+}
+
 
 .persuasion img{
     height: 200px;
     padding: 10px;
+}
+
+section.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to left top, #ff6700, #c64029, #86282d, #441921, #000000);
+}
+
+.register h1{
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.register h4{
+    font-weight: normal;
+}
+
+.register-form, .landing-text{
+    margin: 10px;
+}
+
+.landing-text{
+    width: 400px;
+    max-width: 100%;
+}
+
+.landing-text img{
+    width: 300px;
+}
+
+.input-wrapper, .submit-button{
+    padding: 10px;
+}
+
+.input-wrapper input{
+    border-radius: 10px;
+    outline-color: transparent;
+    text-indent: 10px;
+    color: #fff;
+}
+
+.input-wrapper input::-webkit-input-placeholder{
+    color: rgb(226, 226, 226);
+}
+
+@media screen and (max-width: 550px){
+    .submit-button{
+        text-align: center;
+    }
+}
+
+.submit-button .cta{
+    width: 200px;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #ff6700;
+    border: 1px solid #ff6700;
+}
+
+.submit-button .cta:hover{
+    cursor: pointer;
 }
 
 
@@ -336,14 +419,5 @@ footer{
     font-size: 15px;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
 
 
