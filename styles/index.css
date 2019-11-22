@@ -42,7 +42,7 @@ section header, section.wrapperCall{
 }
 
 section header{
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 2000;
 }
@@ -211,10 +211,6 @@ li.login button{
     background-color: #FF6700;
 }
 
-main.landing-content{
-    height: 500vh;
-    padding: 10px;
-}
 
 main.landing-content h2{
     text-align: center;
@@ -224,9 +220,9 @@ main.landing-content h2{
 section.offer{
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     flex-wrap: wrap;
-    background-color: transparent;
+    background-image: linear-gradient(to right top, #ff6700, #c64029, #86282d, #441921, #000000);
 }
 
 @media screen and (max-width: 500px){
@@ -237,7 +233,7 @@ section.offer{
 
 section.offer > .offer-item{
     margin: 10px 10px;
-    background-color: rgb(36, 33, 33);
+    /* background-color: rgb(36, 33, 33); */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -248,9 +244,106 @@ section.offer > .offer-item{
     
 }
 
+.offer-item p{font-size: 15px;}
+
 .offer-item img{
     height: 30px;
     width: 30px;
 }
 
+.offer-item h3{
+    font-weight: 100;
+}
+
 .offer-item > p{margin: 5px 0;}
+
+/* Courses section */
+
+
+section.courses{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.courses .course-item{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.course-item img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.course-item .item-paragraph{
+    padding: 15px;
+}
+
+.course-item .item-footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+}
+
+span.view-cta{
+    padding: 10px 15px;
+    background-color: hsl(24, 100%, 50%);
+}
+
+span.num-courses{
+    padding-left: 10px;
+    color: #000;
+}
+
+span.view-cta:hover{
+    cursor: pointer;
+    background-color: hsl(30, 100%, 50%);
+}
+
+section.persuasion{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #eee;
+    flex-wrap: wrap;
+}
+
+.persuasion .item{
+    margin: 10px;
+    text-align: center;
+}
+
+
+.persuasion img{
+    height: 200px;
+    padding: 10px;
+}
+
+
+footer{
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
